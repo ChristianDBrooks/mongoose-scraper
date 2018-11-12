@@ -1,0 +1,21 @@
+<div class="container">
+        <h2>Articles</h2>
+        <b><hr></b>
+    <div class="row">
+        <div class="col-8" id="article-container">
+            {{#each data}}
+                <div class="article-item" data-id={{id}}>
+                    <p><b>Title: </b>{{title}}<br></p>
+                    <p><b>Description: </b>{{description}}<br></p>
+                    <a href="{{url}}">{{url}}</a>
+                    <b><hr></b>
+                </div>
+            {{/each}}
+        </div>
+        <div class="col-4" id="comment-container">
+            {{!-- Comments will populate here. --}}
+        </div>
+    </div>
+</div>
+
+<script src="../public/js/article"></script>
